@@ -66,7 +66,7 @@ public class GoodStudent
 
     public String csGPA()
     {
-        DecimalFormat df = new DecimalFormat("00.0");
+        DecimalFormat df = new DecimalFormat("0.0");
         String dec = "";
 
         double result = 0.0;
@@ -75,6 +75,10 @@ public class GoodStudent
         {
             result = gpa * 1.15;
             dec = df.format(result);
+        }
+        else
+        {
+            dec = "Not CS Student";
         }
         return dec;
     }//End csGPA
