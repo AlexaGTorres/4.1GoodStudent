@@ -2,7 +2,7 @@ public class StudentDriver
 {
     public static void main (String [] args)
     {
-        GoodStudent turing = new GoodStudent();
+        GoodStudent turing = new GoodStudent("Alan", "Turing", 191254, 3.56, true);
         GoodStudent nightingale = new GoodStudent("Florance", "Nightingale", 182010, 3.89, false);
         GoodStudent hopper = new GoodStudent("Grace", "Hopper", 190692, 3.99, true);
 
@@ -31,5 +31,5 @@ public class StudentDriver
         System.out.println ("Alan CS Gpa: " + turing.csGPA());
         System.out.println ("Florance CS Gpa: " + nightingale.csGPA());
         System.out.println ("Grace CS Gpa: " + hopper.csGPA());
-    }//ENd main class
+    }//End main class
 }//End StudentDriver
